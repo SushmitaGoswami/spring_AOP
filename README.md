@@ -45,3 +45,14 @@ AOP implementations are provided by:
 - execution point cut - applied to method execution
   pattern - execution(<method modifier> (optional) <return type> <package name.class name> (optional) <method_name(param_name)> <throw exception> (optional) 
 
+ It is possible to reuse a advice using a pointcut declaration. Also, it is possible to combine multiple point cuts and the operators are as follows.
+    - AND (&&)
+    - OR (||)
+    - NOT (!)
+    
+### Ordering of the Advice
+    It is possible to order the advice which will gurantee the ordering of those aspect when applied to a target object.
+    
+## JoinPoints
+   It is possible to retrieve the method signature and arguments using a JointPoint.
+    
